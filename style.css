@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  background-color: rgb(212, 159, 60);
+}
+
+header {
+  background-color: #502d04;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: auto;
+  cursor: pointer;
+  margin: 12px 24px;
+  padding: 8px 16px;
+  background-image: url(./gambar/Berkah-cell1.png);
+  color: #f4f810;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+.nav-bar-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar li {
+  padding: 16px 32px;
+  background-color: #502d04;
+}
+
+.nav-bar-items li a {
+  font-weight: 700;
+  background-color: #502d04;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  padding: 0px 32px;
+}
+
+#profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 140px;
+  margin: 0 1.5%;
+}
+
+#profile-picture {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.title-1 {
+  margin: 24px 0px;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #502d04;
+}
+
+.subtitle {
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin: 24px 0;
+  color: #502d04;
+}
+
+#bio {
+  margin-left: 96px;
+}
+
+.social-media-container a {
+  margin-right: 16px;
+}
+
+hr {
+  margin: 32px 1.5%;
+  color: #502d04;
+}
+
+.portfolio-card {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 1.5%;
+  background-color: rgb(189, 146, 7);
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(71, 35, 2, 0.336);
+}
+
+.portfolio-picture {
+  height: 250px;
+  width: 40%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.portfolio-card div {
+  width: 60%;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: rgb(189, 146, 7);
+}
+
+.title-2 {
+  padding-top: 96px;
+  margin-left: 1.5%;
+  font-size: 1.5em;
+  color: #502d04;
+  font-weight: 700;
+}
+
+.description {
+  line-height: 1.5;
+}
+
+p.description {
+  background-color: rgb(189, 146, 7);
+  color: white;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.skill-card {
+  flex: 0 1 22%;
+  margin: 16px 1.5%;
+  border-radius: 16px;
+}
+
+.skill-picture {
+  height: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 16px;
+}
+
+.skill-title {
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: #f4f810;
+  background-color: rgb(43, 24, 0);
+  border-radius: 20px;
+}
+
+.experience-card {
+  background-color: gray;
+  margin: 32px 1.5%;
+  padding: 16px;
+  background-color: rgb(189, 146, 7);
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(71, 35, 2, 0.336);
+}
+
+.title-3 {
+  color: #f4f810;
+  margin: 16px 0px;
+  font-size: 1.25em;
+  font-weight: 700;
+  background-color: rgb(189, 146, 7);
+}
+
+.title-4 {
+  font-size: 1em;
+  margin: 8px 0px;
+  background-color: rgb(189, 146, 7);
+}
+
+.description {
+  line-height: 1.5;
+  background-color: white;
+}
+
+.education-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  flex: 0 1 30%;
+  margin: 16px 1.5%;
+  padding: 16px 16px;
+  background-color: rgb(189, 146, 7);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(71, 35, 2, 0.336);
+}
+
+.education-picture {
+  height: auto;
+  width: 100px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+  background-color: #502d04;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    position: static;
+    flex-direction: column;
+  }
+
+  .nav-bar-items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profile {
+    padding-top: 32px;
+    flex-direction: column;
+  }
+
+  #bio {
+    margin: 16px;
+    padding: 16px 0;
+  }
+
+  .portfolio-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-card div {
+    width: 95%;
+    margin: 16px;
+  }
+
+  .portfolio-picture {
+    width: 100%;
+    height: auto;
+  }
+  .description {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .skill-card {
+    flex: 0 1 47%;
+  }
+
+  .experience-card {
+    flex: 0 1 60%;
+  }
+
+  .education-card {
+    flex: 0 1 97%;
+  }
+}
